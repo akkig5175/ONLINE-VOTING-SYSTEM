@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System- Registration</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+
+<body style="color: rgb(191, 0, 255);">
+    <style>
+        #Address {
+            width: 30%;
+        }
+        
+        #image {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+        
+        #role {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 30%;
+        }
+    </style>
+    <center>
+        <h1>Online Voting System</h1>
+        <hr>
+        <h3>Registration</h3>
+        <form action="../api/ragister.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter name">
+            <input type="number" name="number" placeholder="Enter number"><br><br>
+            <input type="password" name="password" placeholder="Enter password">
+            <input type="password" name="cpassword" placeholder="Confirm password"><br><br>
+            <input type="text" name="Address" placeholder="Address"><br><br>
+
+            <div id="image">
+                Upload your Image<input type="file" name="Photo">
+            </div>
+
+            <br><br>
+
+            <div id="role">
+                Select your Role<select name="role">
+                    <option value="1 ">Voter</option>
+                    <option value="2 ">Group</option>
+                </select>
+            </div>
+
+            <br>
+            <button style=" font-size: medium; border-radius: 5px; background-color: #3498db;">Register</button><br><br> Already_User?
+            <a href="../index.html "> Login here</a>
+        </form>
+    </center>
+</body>
+
+</html>
